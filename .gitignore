@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # custom
-#auth.json
+auth.json
