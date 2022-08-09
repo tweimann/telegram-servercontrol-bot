@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/tweimann/telegram-servercontrol-bot/issues"
   },
-  "homepage": "https://github.com/tweimann/telegram-servercontrol-bot#readme"
+  "homepage": "https://github.com/tweimann/telegram-servercontrol-bot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.58.0"
+  }
 }
