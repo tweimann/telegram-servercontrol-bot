@@ -2,10 +2,10 @@
   "name": "telegram-ncscp-bot",
   "version": "1.0.0",
   "description": "A Telegram Bot that can control the state of Netcup vServers",
-  "main": "bot.js",
+  "main": "src/bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot.js"
+    "start": "node src/bot.js"
   },
   "repository": {
     "type": "git",
