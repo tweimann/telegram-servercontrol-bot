@@ -105,4 +105,5 @@ dist
 
 # custom
 auth.json
+settings.json
 .vscode/
