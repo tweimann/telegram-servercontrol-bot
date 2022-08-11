@@ -104,6 +104,6 @@ dist
 .tern-port
 
 # custom
-src/auth.json
-src/settings.json
+#src/auth.json
+#src/settings.json
 #.vscode/

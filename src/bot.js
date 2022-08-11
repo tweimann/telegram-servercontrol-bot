@@ -1,5 +1,5 @@
-const settings = require('./settings.json')
-const auth = require('./auth.json')
+const settings = require('./conf/settings.json')
+const auth = require('./conf/auth.json')
 
 const TelegramBot = require('node-telegram-bot-api')
 
