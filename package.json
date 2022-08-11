@@ -1,0 +1,30 @@
+{
+  "name": "telegram-ncscp-bot",
+  "version": "1.0.0",
+  "description": "A Telegram Bot that can control the state of Netcup vServers",
+  "main": "src/bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tweimann/telegram-servercontrol-bot.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "netcup",
+    "scp",
+    "servercontrolpanel"
+  ],
+  "author": "tweimann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tweimann/telegram-servercontrol-bot/issues"
+  },
+  "homepage": "https://github.com/tweimann/telegram-servercontrol-bot#readme",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.58.0"
+  }
+}
