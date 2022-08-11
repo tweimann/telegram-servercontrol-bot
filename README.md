@@ -12,8 +12,12 @@ npm install
 npm start
 ```
 
-## How to start in Docker
-clone the tweimann/telegram-servercontrol-bot image and setup the following binds:
+## How to run in Docker
+clone the tweimann/telegram-servercontrol-bot image and setup the following environment vars:
 ```
-making the image docker ready has not been done yet
+TELEGRAM_API_KEY="XXXXXXXXX"
+ADMINS="User1,User2"
+CHATID="-123456789,-234567890"
+PROBE_INTERVAL="60" 
 ```
+bot will only respond to messages from admins that are in te defined channels
