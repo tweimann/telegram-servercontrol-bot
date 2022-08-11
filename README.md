@@ -9,7 +9,7 @@ cd telegram-servercontrol-bot
 Now configure the variables in the ```auth.json``` and ```settings.json``` files
 ```
 npm install
-node bot.js
+npm start
 ```
 
 ## How to start in Docker
