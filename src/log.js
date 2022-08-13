@@ -20,6 +20,6 @@ module.exports = {
 
         msg.split('\n').forEach( (e) => {
             console.log(prefix + e)
-        });
+        })
     }
 }

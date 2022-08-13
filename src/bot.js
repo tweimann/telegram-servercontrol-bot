@@ -1,5 +1,6 @@
 // packages
 const TelegramBot = require('node-telegram-bot-api')
+const soap = require('soap')
 const { config } = require('dotenv')
 config()
 
@@ -16,7 +17,8 @@ const settings = {
     "debug": process.env.DEBUG,
     "adminAccounts": process.env.ADMINS.split(','),
     "chatID": process.env.CHATID.split(','),
-    "probeInterval": process.env.PROBE_INTERVAL
+    "probeInterval": process.env.PROBE_INTERVAL,
+    "scpURL": "https://www.servercontrolpanel.de:443/WSEndUser?wsdl"
 }
 
 // define bot
@@ -72,5 +74,13 @@ if (settings.debug) {
 // request server status
 bot.onText(/\/scstatus/, (msg, match) => {
     if (msgFilter(3, msg) == false) {return false}
+})
 
+soap.createClient(settings.scpURL, {}, function(err, client) {
+    client.getVServers({
+        loginName: auth.scpLoginName,
+        password: auth.scpPassword
+    }, function(err, result) {
+        console.log(result.data);
+    });
 })
