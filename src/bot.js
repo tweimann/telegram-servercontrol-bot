@@ -78,9 +78,9 @@ bot.onText(/\/scstatus/, (msg, match) => {
 
 soap.createClient(settings.scpURL, {}, function(err, client) {
     client.getVServers({
-        loginName: auth.scpLoginName,
-        password: auth.scpPassword
+        'loginName': auth.scpLoginName,
+        'password': auth.scpPassword
     }, function(err, result) {
-        console.log(result.data);
+        return result.data
     });
 })
